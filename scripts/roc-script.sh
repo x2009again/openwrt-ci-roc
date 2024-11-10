@@ -8,6 +8,7 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 rm -rf feeds/packages/net/alist
 rm -rf feeds/luci/applications/luci-app-alist
 rm -rf feeds/packages/net/adguardhome
+rm -rf feeds/packages/net/ariang
 
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
@@ -19,9 +20,10 @@ function git_sparse_clone() {
   cd .. && rm -rf $repodir
 }
 
-# Alist & AdGuardHome & 集客无线AC控制器 & Lucky
+# Alist & AdGuardHome & 集客无线AC控制器 & Lucky & AriaNg
 git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
 git_sparse_clone main https://github.com/kenzok8/small-package adguardhome luci-app-adguardhome
+git_sparse_clone master https://github.com/immortalwrt/packages net/ariang 
 # git clone --depth=1 https://github.com/lwb1978/openwrt-gecoosac package/openwrt-gecoosac
 # git clone --depth=1 https://github.com/gdy666/luci-app-lucky package/lucky
 
