@@ -2,6 +2,7 @@ name: Arthur&Athena-Master
 
 on:
   workflow_dispatch:
+  workflow_call:
   # schedule:
   #   - cron: 0 20 * * *
 
