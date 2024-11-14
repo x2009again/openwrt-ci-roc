@@ -1,4 +1,4 @@
-name: Taiyi-Stable
+name: Taiyi-Stable-base
 
 on:
   workflow_dispatch:
