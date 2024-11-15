@@ -25,7 +25,7 @@ function git_sparse_clone() {
 
 # Alist & AdGuardHome & 集客无线AC控制器 & Lucky & AriaNg
 git clone --depth 1 https://github.com/animegasan/luci-app-wolplus.git package/luci-app-wolplus
-git clone --depth 1 https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+#git clone --depth 1 https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
 git_sparse_clone main https://github.com/kenzok8/small-package adguardhome luci-app-adguardhome
 git_sparse_clone master https://github.com/immortalwrt/packages net/ariang 
